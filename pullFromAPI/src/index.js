@@ -6,7 +6,9 @@ const dotenv = require("dotenv");
 // init the dotenv config to use environment variables
 dotenv.config();
 
+// The token for the coinmarketcap API is saved in the .env file (you can request that from me)
 const API_TOKEN = process.env.API_TOKEN;
+// Interval of 1 minute
 const FETCH_INTERVAL = 60000;
 const filePath = path.join(__dirname, "../../data/rawData.json");
 let counter = 1;
