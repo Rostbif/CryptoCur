@@ -14,7 +14,9 @@ const filePath = path.join(__dirname, "../../data/rawData.json");
 let counter = 1;
 
 async function fetchData() {
-  console.log(`Fetch Data method is called for the ${counter} time`);
+  console.log(
+    `Fetch Data method is called for the ${counter} time at ${new Date()}`
+  );
   counter++;
   try {
     // API endpoint

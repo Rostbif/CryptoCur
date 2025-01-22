@@ -10,9 +10,9 @@ const TIME_INTERVAL = 1800000;
 let counter = 1;
 
 async function processData() {
-  // const url =
-  //   "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest";
-  console.log(`ProcessData function called for the ${counter} time`);
+  console.log(
+    `ProcessData function called for the ${counter} time at ${new Date()}`
+  );
   counter++;
   try {
     // Read existing data from the file
